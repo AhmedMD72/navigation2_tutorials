@@ -34,7 +34,7 @@ def generate_launch_description():
 
     models_dir = os.path.join(gps_wpf_dir, "models")
     models_dir += os.pathsep + \
-        f"/opt/ros/{os.getenv('ROS_DISTRO')}/share/turtlebot3_gazebo/models"
+        f"/opt/ros/{os.getenv('jazzy')}/share/turtlebot3_gazebo/models"
     set_gazebo_model_path_cmd = None
 
     if 'GAZEBO_MODEL_PATH' in os.environ:
